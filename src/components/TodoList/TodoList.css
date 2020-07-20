@@ -1,0 +1,46 @@
+.list-wrapper {
+    flex: 1;
+}
+
+.list-wrapper .list-tag {
+    width: max-content;
+    padding: 0 5px 0 5px;
+    border-radius: 10%;
+}
+
+.list-wrapper .list-tag span {
+    color: white;
+    font-weight: 500;
+}
+
+.done {
+
+    background-color: #45CB85;
+}
+
+.todo {
+    background-color: #1E96FC;
+}
+
+.list-container {
+    min-height: 70px;
+    background-color: #343A40;
+    border-radius: 5px;
+    padding: 5px;
+    height: max-content;
+    width: 100%;
+    z-index: 0;
+}
+
+.message-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.message-container p, .message-container i {
+    color: #65707B;
+    text-align: center;
+}
