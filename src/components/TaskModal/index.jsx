@@ -5,8 +5,8 @@ import firebase from '../../firebase';
 
 export default (props) => {
 	const [todo, setTodo] = useState("");
-	const db = firebase.database();
-
+	const db = firebase.database()
+	
 	const handleSave = () => {
 		db.ref().child("todos").push({ name: todo, done: false });
 		props.onHide();

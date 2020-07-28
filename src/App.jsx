@@ -13,8 +13,8 @@ export default props => {
     const doneItems = todos.filter(todo => todo.done)
     const todoItems = todos.filter(todo => !todo.done)
     const db = firebase.database()
-    
-    React.useEffect(() => {
+	
+	React.useEffect(() => {
         db.ref().child('todos').on('value', snapshot => {
             const data = snapshot.val()
             const arrayResponse = []
