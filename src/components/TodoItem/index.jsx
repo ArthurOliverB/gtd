@@ -14,8 +14,6 @@ export default (props) => {
     }
 
     function renderItem() {
-        console.log("hello");
-        console.log(props.item);
         return (
             <p>{ props.item.name }</p>
         )

@@ -22,7 +22,6 @@ export default props => {
                 arrayResponse.push( {id: `${key}`, ...data[key] })   
             }
             setTodos(arrayResponse)
-            console.log(arrayResponse)
         })
     }, [db])
 

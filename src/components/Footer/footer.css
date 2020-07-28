@@ -1,3 +1,9 @@
+.wrapper footer {
+	width: max-content;
+	float: right;
+	position: absolute;
+	right: 0;
+}
 footer .footer-wrapper {
     display: flex;
     flex-direction: row-reverse;

@@ -1,10 +1,9 @@
 {
-  "name": "To-Doing",
-  "short_name": "2doing",
-  "theme_color": "#2ecc71",
-  "background_color": "#2ecc71",
+  "name": "ToDo",
+  "short_name": "ToDo",
+  "theme_color": "#121416",
+  "background_color": "#121416",
   "display": "standalone",
-  "orientation": "portrait",
   "Scope": "/",
   "start_url": "/",
   "icons": [
