@@ -1,16 +1,16 @@
 .modal-content {
-    background-color: #343a40;
-    color: white;
+	background-color: #343a40;
+	color: white;
 }
 
 .modal-content span {
-    color: white;
+	color: white;
 }
 
 .modal-header {
-    border-bottom: 0;
+	border-bottom: 0;
 }
 
 .modal-footer {
-    border-top: 0;
+	border-top: 0;
 }

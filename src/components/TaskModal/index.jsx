@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 import { Modal, Button, Form } from "react-bootstrap";
 import "./TaskModal.css";
-import firebase from '../../firebase';
+import firebase from "../../firebase";
 
 export default (props) => {
 	const [todo, setTodo] = useState("");
-	const db = firebase.database()
-	
+	const db = firebase.database();
+
 	const handleSave = () => {
 		db.ref().child("todos").push({ name: todo, done: false });
 		props.onHide();
-	}
-	
+	};
+
 	return (
 		<Modal
 			{...props}
@@ -28,7 +28,11 @@ export default (props) => {
 				<Form>
 					<Form.Group>
 						<Form.Label>Nova tarefa</Form.Label>
-						<Form.Control type="email" placeholder="Insira a nova tarefa" onChange={e => setTodo(e.target.value)}/>
+						<Form.Control
+							type="email"
+							placeholder="Insira a nova tarefa"
+							onChange={(e) => setTodo(e.target.value)}
+						/>
 						<Form.Text type="number">
 							DICA: Quebre uma tarefa grande em pequenas tarefas!
 						</Form.Text>
@@ -36,7 +40,7 @@ export default (props) => {
 				</Form>
 			</Modal.Body>
 			<Modal.Footer>
-				<Button variant="primary" onClick={ e => handleSave()}>
+				<Button variant="primary" onClick={(e) => handleSave()}>
 					Adicionar
 				</Button>
 			</Modal.Footer>

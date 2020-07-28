@@ -4,28 +4,28 @@
 	position: absolute;
 	right: 0;
 }
+
 footer .footer-wrapper {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    width: max-content;
-    height: 100px;
-    background-color: transparent;
-    z-index: 1;
-    float: right;
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	width: max-content;
+	height: 100px;
+	background-color: transparent;
+	z-index: 1;
+	float: right;
 }
 
 footer .footer-wrapper button {
-    height: 60px;
-    width: 60px;
-    border-radius: 100%;
-    border: none;
-    outline: none;
-    background-color: #2D3339;
-    margin: 20px;
+	height: 60px;
+	width: 60px;
+	border-radius: 100%;
+	border: none;
+	outline: none;
+	background-color: #2d3339;
+	margin: 20px;
 }
 
-footer .footer-wrapper button i{
-    color: #1E96FC;
+footer .footer-wrapper button i {
+	color: #1e96fc;
 }
-
